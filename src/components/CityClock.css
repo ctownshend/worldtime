@@ -1,0 +1,81 @@
+.city-clock {
+  padding: 0.6rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 220, 160, 0.1);
+  background: rgba(8, 16, 32, 0.55);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.city-clock--day {
+  box-shadow: inset 0 1px 0 rgba(255, 209, 102, 0.15);
+}
+
+.city-clock--night {
+  box-shadow: inset 0 1px 0 rgba(126, 184, 255, 0.15);
+  border-color: rgba(126, 184, 255, 0.15);
+}
+
+.city-clock__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.city-clock__name {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #fff8e7;
+}
+
+.city-clock__country {
+  margin: 0.1rem 0 0;
+  font-size: 0.68rem;
+  color: rgba(255, 220, 160, 0.5);
+}
+
+.city-clock__time {
+  margin: 0.3rem 0 0.25rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #ffd166;
+}
+
+.city-clock--night .city-clock__time {
+  color: #7eb8ff;
+}
+
+.city-clock__footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.6rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  color: rgba(255, 220, 160, 0.45);
+}
+
+.city-clock__coords {
+  margin-left: auto;
+}
+
+.city-clock__remove {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 220, 160, 0.6);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.city-clock__remove:hover {
+  background: rgba(255, 100, 100, 0.2);
+  color: #ffaaaa;
+}

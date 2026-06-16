@@ -1,0 +1,100 @@
+.app {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.app__header {
+  text-align: center;
+}
+
+.app__eyebrow {
+  margin: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 209, 102, 0.55);
+}
+
+.app__title {
+  margin: 0.4rem 0 0;
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+  font-weight: 400;
+  color: #fff8e7;
+  letter-spacing: -0.02em;
+}
+
+.app__subtitle {
+  margin: 0.6rem auto 0;
+  max-width: 28rem;
+  font-size: 1rem;
+  color: rgba(255, 220, 160, 0.55);
+  line-height: 1.5;
+}
+
+.app__main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.app__map-panel {
+  min-width: 0;
+  width: 100%;
+}
+
+.app__controls {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.app__section-title {
+  margin: 0 0 0.6rem;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 220, 160, 0.55);
+}
+
+.app__clock-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.app__empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 220, 160, 0.4);
+}
+
+.app__footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 220, 160, 0.08);
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  color: rgba(255, 220, 160, 0.35);
+}
+
+@media (max-width: 900px) {
+  .app__controls {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,118 @@
+.world-map {
+  position: relative;
+  width: 100%;
+}
+
+.world-map__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 220, 160, 0.12);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.4),
+    0 24px 48px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  background: #020810;
+}
+
+.world-map__night-texture {
+  opacity: 0.95;
+}
+
+.world-map__night-atmosphere {
+  fill: rgba(4, 8, 24, 0.22);
+  pointer-events: none;
+}
+
+.world-map__twilight {
+  fill: rgba(255, 140, 60, 0.08);
+  pointer-events: none;
+}
+
+.world-map__terminator {
+  stroke: rgba(255, 220, 160, 0.35);
+  stroke-width: 2;
+  pointer-events: none;
+}
+
+.world-map__dot--day {
+  fill: #ffd166;
+  stroke: #fff8e7;
+  stroke-width: 2;
+}
+
+.world-map__dot--night {
+  fill: #7eb8ff;
+  stroke: #c8e0ff;
+  stroke-width: 2;
+}
+
+.world-map__pulse {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  opacity: 0.35;
+  animation: pulse 2.5s ease-out infinite;
+}
+
+.world-map__marker {
+  color: rgba(255, 220, 160, 0.6);
+}
+
+.world-map__tag {
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.55));
+}
+
+.world-map__tag-bg--day {
+  fill: rgba(8, 16, 32, 0.88);
+  stroke: rgba(255, 209, 102, 0.35);
+  stroke-width: 1;
+}
+
+.world-map__tag-bg--night {
+  fill: rgba(8, 16, 32, 0.88);
+  stroke: rgba(126, 184, 255, 0.35);
+  stroke-width: 1;
+}
+
+.world-map__label {
+  fill: rgba(255, 248, 230, 0.95);
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-anchor: middle;
+}
+
+.world-map__time {
+  fill: #ffd166;
+  font-family: 'DM Mono', monospace;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-anchor: middle;
+}
+
+.world-map__time--night {
+  fill: #7eb8ff;
+}
+
+.world-map__caption {
+  margin: 0.6rem 0 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: rgba(255, 220, 160, 0.45);
+  text-transform: uppercase;
+}
+
+@keyframes pulse {
+  0% {
+    r: 8;
+    opacity: 0.5;
+  }
+  100% {
+    r: 24;
+    opacity: 0;
+  }
+}

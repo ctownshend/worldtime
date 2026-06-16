@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&family=Instrument+Serif&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Instrument Sans', system-ui, sans-serif;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(255, 180, 80, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(60, 100, 180, 0.15), transparent),
+    linear-gradient(165deg, #060d1a 0%, #0a1628 40%, #081018 100%);
+  color: #fff8e7;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}

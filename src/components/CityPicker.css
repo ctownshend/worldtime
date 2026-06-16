@@ -1,0 +1,93 @@
+.city-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-height: 0;
+}
+
+.city-picker__label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 220, 160, 0.55);
+}
+
+.city-picker__input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 220, 160, 0.15);
+  background: rgba(8, 16, 32, 0.6);
+  color: #fff8e7;
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.city-picker__input:focus {
+  border-color: rgba(255, 209, 102, 0.5);
+  box-shadow: 0 0 0 3px rgba(255, 209, 102, 0.12);
+}
+
+.city-picker__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+  max-height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.city-picker__item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  padding: 0.55rem 0.75rem;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s;
+}
+
+.city-picker__item:hover {
+  background: rgba(255, 220, 160, 0.08);
+}
+
+.city-picker__item--selected {
+  background: rgba(255, 209, 102, 0.12);
+  box-shadow: inset 2px 0 0 #ffd166;
+}
+
+.city-picker__name {
+  font-weight: 500;
+  color: #fff8e7;
+}
+
+.city-picker__meta {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255, 220, 160, 0.45);
+}
+
+.city-picker__status {
+  margin: 0;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  color: rgba(255, 220, 160, 0.45);
+}
+
+.city-picker__error {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #ff9999;
+}
