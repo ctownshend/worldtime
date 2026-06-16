@@ -2,6 +2,8 @@
 
 A browser widget for live world clocks and a stitched day–night Earth map. Cities are loaded from the **GeoNames** API (with coordinates and IANA timezone). The map uses NASA **Blue Marble** daylight imagery with a night-lights texture clipped to the live **solar terminator**.
 
+![Chronosphere world time app showing the day–night Earth map with city clocks](public/screenshot.jpg)
+
 ## Setup
 
 1. Register a free GeoNames account: https://www.geonames.org/login  
